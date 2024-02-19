@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-            maven 'Maven'
-            jdk 'JDK'
+            maven 'maven1'
+            jdk 'jdk'
         }
 
     stages {
@@ -26,6 +26,8 @@ pipeline {
         }
         success {
             echo 'Build succeeded!'
+            junit '**/target/surefire-reports/TEST-*.xml'
+            jacoco(execPattern: '**/target/jacoco.exec')
         }
         failure {
             echo 'Build failed!'
