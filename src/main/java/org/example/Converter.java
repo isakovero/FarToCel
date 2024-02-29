@@ -14,4 +14,8 @@ public class Converter {
         return (float) (kel-273.15);
     }
 
+    public static double kelvintoFah(double kel) {
+        return (kel - 273.15) * 9 / 5 + 32;
+    }
+
 }

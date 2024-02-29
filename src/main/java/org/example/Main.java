@@ -14,5 +14,11 @@ public class Main {
         float kelvin = 310.15f;
         float celsius2 = Converter.kelvintoCel(kelvin);
         System.out.println(kelvin + "K is " + celsius2 + "°C");
+
+        // Kelvin to Fahrenheit
+        double fahrenheit2 = Converter.kelvintoFah(kelvin);
+        System.out.println(kelvin + "K is " + fahrenheit2 + "°F");
     }
-}
+    }
+
+

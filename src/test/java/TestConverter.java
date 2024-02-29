@@ -15,4 +15,10 @@ public class TestConverter {
     public void testKelvinToCelsius() {
         assertEquals(36.99999237060547, Converter.kelvintoCel(310.15f));
     }
+
+    @Test
+    public void testKelvinToFahrenheit() {
+        assertEquals(80.51, Converter.kelvintoFah(300.1), 0.01);
+    }
 }
+
