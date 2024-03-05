@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE_NAME = 'isakovero/jenkins'
+        IMAGE_NAME = 'isakovero/interconversions'
         TAG = 'latest'
 
     }
