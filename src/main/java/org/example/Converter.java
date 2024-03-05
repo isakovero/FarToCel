@@ -1,6 +1,7 @@
 package org.example;
 public class Converter {
 
+    // Fahrenheit to Celsius
     double fahrenheit;
     public Converter(double fahrenheit) {
         this.fahrenheit = fahrenheit;
